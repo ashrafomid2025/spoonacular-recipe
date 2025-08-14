@@ -1,4 +1,6 @@
-export default function Foods({ title, image }) {
+import { useState } from "react";
+
+export default function Foods({ title, image, id, setFoodID }) {
   return (
     <div className="w-[230px]  h-fit transition-all duration-300 p-3 overflow-hidden rounded-md shadow-md ">
       <img
@@ -7,7 +9,10 @@ export default function Foods({ title, image }) {
         alt=""
       />
       <h1 className="text-sm font-bold text-center">{title}</h1>
-      <button className="py-2 px-4 cursor-pointer bg-blue-400 text-white rounded-md">
+      <button
+        onClick={() => setFoodID(id)}
+        className="py-2 px-4 cursor-pointer bg-blue-400 text-white rounded-md"
+      >
         Learn More...
       </button>
     </div>
