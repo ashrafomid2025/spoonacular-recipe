@@ -8,7 +8,7 @@ export default function Details({ foodId }) {
     async function fetchData() {
       const data = await fetch(`${URL}${foodId}/information?apiKey=${API_KEY}`);
       const response = await data.json();
-      console.log(response);
+
       setDetails(response);
     }
     fetchData();
