@@ -21,7 +21,7 @@ export default function Details({ foodId }) {
           {details.pricePerServing} AFG
         </span>
         <span className="py-2 px-4 bg-red-400 text-white">
-          {details.readyInMinutes} Min
+          {details.readyInMinutes} Minutes
         </span>
       </div>
       <div className="flex justify-between flex-wrap gap-1.5 my-3">
